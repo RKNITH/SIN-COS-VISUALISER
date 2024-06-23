@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trig Intuition</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <div id="content">
+    <h1>How are circles and triangles related?</h1>
+    <p>
+      Often <i>trigonometry</i> is taught in relation to triangles. <strong>sine</strong> and <strong>cosine</strong>
+      just kind of magically show up in discussion without really explaining their relevance.
+    </p>
+
+    <p>
+      Short answer:
+    </p>
+    <ul>
+      <li>
+        <strong>sin(θ)</strong> measures your <i>vertical</i> distance on a unit circle for the angle θ (the <i>y</i>
+        value between -1 and 1)
+      </li>
+      <li>
+        <strong>cos(θ)</strong> measures your <i>horizontal</i> distance on a unit circle for the angle θ (the <i>x</i>
+        value between -1 and 1)
+      </li>
+    </ul>
+    <p class="caption">
+      To help with this intuition, here's an interactive unit circle (radius = 1 centered on the origin (0, 0)) that
+      shows the relationship between sine, cosine, circles and triangles all in one interactive infographic.
+    </p>
+    <div id="theta">
+      θ = 0 π ≈ 0°
+    </div>
+    <div id="infographic">
+      <canvas id="circle"></canvas>
+      <div id="graphs">
+        <div class="row">
+          <div style="width: 60px">
+            <strong style="color:#ff0044">sin(θ)</strong>
+          </div>
+          <div class="canvas-wrap">
+            <canvas id="sine"></canvas>
+          </div>
+        </div>
+        <div class="row">
+          <div style="width: 60px">
+            <strong>cos(θ)</strong>
+          </div>
+          <div class="canvas-wrap">
+            <canvas id="cosine"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
